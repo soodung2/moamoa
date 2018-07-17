@@ -1,0 +1,183 @@
+// Place all the styles related to the Cloths controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/*new.html*/
+.sj_new{
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+
+/*show.css*/
+.main_img {
+    width: 100%;
+}
+.sjtop{
+    height: 20rem;
+}
+.img1{
+    margin-left: 2rem;
+    width: 100%;
+    height: 400px;
+}
+.img2{
+    margin-left: 1rem;
+    width: 100%;
+    height: 192px;
+}
+.reviewimg{
+    width: 100%;
+    margin-left: 2rem;
+}
+.sjreviewpt{
+    height: 2rem;
+    margin-bottom: 2rem;
+}
+.reviewtitle{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+   
+}
+.review{
+    margin-top: 1rem;
+}
+
+.a-container_review {
+    background-color: #f6f6f6;
+    margin: 1% 0 0 12%;
+    width: 76%;
+    float: left;
+    padding: 20px 20px 7px 40px;
+}
+
+.sjmid{
+    
+}
+.sjlink{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+/*end*/
+.nowtrending_text {
+    text-align: center;
+    margin: 0rem 0rem 4rem 0rem;
+}
+
+/* 메인 Now trending 섹션 - 카드 */
+.nowtrending {
+  width: 85%;
+  margin-left: 8%;
+}
+
+.card_img {
+    width: 258px;
+    height: 260px;
+}
+
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin: 0% 0% 15% 2%;
+    display: inline-block;
+    height: 350px;
+    width: 260px;
+}
+
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+}
+
+.container {
+    padding: 12px 6px;
+    text-align: center;
+}
+
+
+.a_img_size {
+    width: 100%;
+    height : 200px;
+}
+
+.ddd{
+    width: 100px;
+}
+/*cartegory-navbar*/
+.cartegory_top{
+  margin-top: 3rem;
+  font-family: roboto;
+  height:10rem;
+}
+
+.sjcard_img {
+    width: 260px;
+    height: 260px;
+}
+
+.card_cartegory {
+    width: 85%;
+    margin-left: 8%;
+}
+
+.sjcard {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin: 0% 0% 15% 3%;
+    display: inline-block;
+    height: 350px;
+    width: 260px;
+}
+.sjcontainer {
+    padding: 12px 6px;
+    text-align: center;
+}
+.sjcard:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+}
+
+.p_font_color {
+    color: #666 ;
+}
+
+
+
+/* 제품등록 버튼 */
+
+.upload_btn {
+    height: 50px;
+    margin: 1.5% 0% 1.5% 8.5%;
+    opacity: 0.5;
+    background-color: white;
+}
+
+
+.bg-div:hover {
+    background-color: white;
+}
+
+
+
+
+.p_visit:visited {
+    color:#666;
+}
+.p_visit:link {
+    color:#666;
+}
+.p_visit:hover {
+    color:#669;
+}
+.p_visit:active {
+    color:#666;
+}
+
+.p_hover:hover {
+    opacity: 0.3;
+}

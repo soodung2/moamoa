@@ -1,0 +1,2 @@
+module EditinfoHelper
+end

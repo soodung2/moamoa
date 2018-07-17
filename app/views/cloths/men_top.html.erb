@@ -1,0 +1,56 @@
+<p id="notice"><%= notice %></p>
+
+
+
+
+<%= image_tag "main_men.jpg", class: "main_img" %>
+
+<div class="bg-div">
+ <% if user_signed_in?%>
+   <%= link_to image_tag("add_icon.png", class: "upload_btn"), new_cloth_path %>
+ <% else %>
+   <%=link_to image_tag("add_icon.png", class: "upload_btn"), new_user_session_path %>
+ <%end%>
+</div>
+ 
+
+
+<div class="nowtrending_text">
+ <h2>Check Out The Best Items For You!</h2>
+</div>
+
+<section class="nowtrending">
+  <div class='row'>
+    <% @cloths.each do |cloth| %>
+    
+      <% if cloth.sex == "m" %>
+        <div class="col-sm-12 col-md-6 col-xl-3">
+          <a href = "/cloths/<%= cloth.id %>" class="p_visit">  
+            <div class="card">
+              <div>
+                <%= image_tag("heart_empty.png", class: "a-heart_empty") %>
+                <% if !cloth.image1.blank? %>
+                  <img class="card_img" src="<%= cloth.image1 %>" alt="Card image cap">
+                <% else %>
+                  <%= image_tag("placeholder_fest.jpeg", class: "card-img-top h-img") %>
+                <% end %>
+  
+              </div>
+              <div class="container">
+                <h6><b><%= cloth.name %></b></h6>
+                <b><%= cloth.category %></b>
+              </div>
+            </div>
+          </a>
+        </div>
+      <% end %>
+    <% end %>
+    
+
+</section>
+<div style="margin-right: 34%;">
+  <%= paginate @cloths %>
+</div>
+
+
+<%= image_tag "logo_bottom.png", class: "logo_bottom" %>

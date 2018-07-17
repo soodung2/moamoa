@@ -1,0 +1,60 @@
+<div class="a_user_info" style="text-align: center;">
+  <h1 class="user_name"><%= current_user.name %></h1>
+  <p class="user_email"><%= current_user.email %></p>
+  <br>
+  <a href="/editinfo"><button class="a_mypagebtn" type="submit">Edit info</button></a>
+</div>
+
+<br>
+
+<div class="a_liked">
+
+<h1 class="liked_text" style="text-align: center;">Items you've liked</h1>
+
+</div>
+
+<div class="card_liked">
+  <div class='row'>
+ 
+    <div class='col-xl-3'>
+      <div class="card">
+        <%= image_tag("heart_red.png", class: "a-heart_empty") %>
+        <%= image_tag "8-1.png", class: "card_img" %>
+        <div class="container">
+          <h6><b>꼼데가르송 셔츠 AZ B012</b></h6>
+          <p>top / 323000</p>
+        </div>
+      </div>
+    </div>
+
+ 
+    <div class='col-xl-3'>
+      <div class="card">
+        <%= image_tag("heart_red.png", class: "a-heart_empty") %>
+        <%= image_tag "15-2.png", class: "card_img" %>
+        <div class="container">
+          <h6><b>파타고니아 후디니 재킷</b></h6>
+          <p>top / 159000</p>
+        </div>
+      </div>
+    </div>
+    
+ 
+    <div class='col-xl-3'>
+      <div class="card">
+        <%= image_tag("heart_red.png", class: "a-heart_empty") %>
+        <%= image_tag "12-1.png", class: "card_img" %>
+        <div class="container">
+          <h6><b>언더아머 하트기어 반바지</b></h6>
+          <p>bottom / 59000</p>
+        </div>
+      </div>
+    </div>
+    
+ 
+ 
+  </div>
+</div>
+
+
+<%= image_tag "logo_bottom.png", class: "logo_bottom" %>

@@ -1,0 +1,61 @@
+body {font-family: roboto;}
+
+* {box-sizing: border-box}
+
+
+
+hr {
+    margin-bottom: 25px;
+}
+
+.editinfo_btn {
+    background-color: grey;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    border-radius: 6px;
+}
+
+button:hover {
+    opacity:1;
+}
+
+
+.editinfo_form {
+  width: 50%;
+  margin: 3% 0 0 25%;
+  padding: 2rem;
+  border: 1px solid #ccc;
+}
+
+.editinfo_label {
+  text-align: left;
+}
+
+.savebtn {
+  float: left;
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+.editinfo_container {
+    padding: 3rem;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}

@@ -1,0 +1,123 @@
+<p id="notice"><%= notice %></p>
+
+<div style="margin-top:70px;"></div>
+
+
+  <div class="row">
+    <div class=" col-xl-1"></div>
+    
+    
+      <div class=" col-xl-3">
+        <p>
+          <img class=img1 src = '<%= @cloth.image1 %>'/>
+        </p>
+      </div>
+      
+    
+      <div class=" col-xl-2">
+        <p>
+          <img class=img2 src = '<%= @cloth.image2 %>'/>
+        </p>
+
+        <p>
+          <img class=img2 src = '<%= @cloth.image3 %>'/>
+        </p>
+      </div>
+    
+    <div class=" col-xl-1"></div>
+    
+    <div class=" col-xl-4">
+        
+        <p style="line-height: 1rem, width: 400px;">
+         <font size="6"><%= @cloth.name %></font>
+        </p>
+        
+      <br>
+          <div style="overflow:scroll; width:400px; height:340px;">
+        
+        <ul class="list-group">
+          <a href ='http://store.musinsa.com/app/product/detail/735723/0'><li class="list-group-item">무신사스토어    ₩25500</li></a>
+          <a href = 'http://itempage3.auction.co.kr/DetailView.aspx?itemno=B512089607'><li class="list-group-item">Auction   ₩25290</li></a>
+          <a href = 'http://www.coupang.com/vp/products/61166033?itemId=209724941&vendorItemId=3497300186&q=%EC%B9%BC%ED%95%98%ED%8A%B8+%EB%B0%98%ED%8C%94%ED%8B%B0&itemsCount=36&searchId=ce360ae8d9eb46d0aae94d56328e1688&rank=0'><li class="list-group-item">Coupang        ₩26900</li></a>
+          <a href= '#' class = 'p_font_color'><li class="list-group-item">Wating For...</li></a>
+          <a href= '#' class = 'p_font_color'><li class="list-group-item">Wating For...</li></a>
+          <a href= '#' class = 'p_font_color'><li class="list-group-item">Wating For...</li></a>
+          <a href= '#' class = 'p_font_color'><li class="list-group-item">Wating For...</li></a>
+          <a href= '#' class = 'p_font_color'><li class="list-group-item">Wating For...</li></a>
+          <a href= '#' class = 'p_font_color'><li class="list-group-item">Wating For...</li></a>
+          
+          
+        </ul>
+        
+      </div>
+    </div>  
+  <div class=" col-xl-2"> </div>
+  </div>  
+
+    
+    <div style="margin: 100px;"></div>
+    
+<section class="sjreviewpt">
+  <p class="reviewtitle">Reviews</p>
+  
+</section>
+
+    <div style="margin: 30px;"></div>
+
+<%@reviews.each do |review|%>
+  <section class="a-container_review">
+    <div class="row">
+      <div>
+        <p class="sjmid">  
+          <strong>Shop:</strong>
+          <%= review.shop %>
+        </p>
+        <p class="sjmid">  
+          <strong>Size:</strong>
+          <%= review.size %>
+        </p>
+        <p class="sjmid">  
+          <strong>Date:</strong>
+          <%= review.date %>
+        </p>
+        <p class="sjmid">  
+          <strong>Content:</strong>
+          <%= review.content %>
+        </p>
+      </div>
+      <div class=" col-xl-1"></div>
+  </section>
+<% end %>
+
+<div style="margin-right: 33%;">
+  <%= paginate @reviews %>
+</div>
+
+
+<!--<div class="a-reply">          -->
+ 
+<!--  <%= form_for Comment.new, url:comments_path do |f| %>-->
+<!--    <%= f.text_field :content %>-->
+<!--    <%= f.hidden_field :cloth_id, value: @cloth.id %>-->
+    
+<!--    <br>-->
+<!--    <br>-->
+<!--    <%= f.submit '댓글 쓰기' %>-->
+<!--  <%end%>-->
+  
+<!--  <% @cloth.comments.all.each do|comment|%>-->
+<!--    <br>-->
+<!--    <%=comment.content%>-->
+<!--    <br>-->
+<!--    <%=link_to 'Destroy', comment_path(comment), method: :delete, date: { confirm: 'Are you sure?'} %>-->
+<!--    <br>-->
+<!--  <%end%>-->
+<!--</div>-->
+
+<div class="sjlink">
+  <%= link_to 'Edit', edit_cloth_path(@cloth) %> |
+  <%= link_to 'Back', cloths_path %>
+</div>
+
+
+<%= image_tag "logo_bottom.png", class: "logo_bottom" %>
